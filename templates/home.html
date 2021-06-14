@@ -1,0 +1,47 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<!--Page Header-->
+<header> <!--class="masthead" style="background-image: url('../static/image/')"-->
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Hi! I'm Aidanai</h1>
+            <br>
+            <span class="subheading">World is what you create!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<br>
+<br>
+<br>
+<br>
+<!--Main Content-->
+<article>
+<div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+          <img src="{{url_for ('static', filename='image/me_in_my_car.png')}}" class="col-md-6 float-md-end mb-3 ms-md-3" alt="">
+      
+          <p>
+            I'm just a person who likes to make websites. I've been coding since the last 3 months and still learning something new everyday. Systems programming is something that fascinates me a lot, but I think robots are cool as well.
+          </p>
+          <p>
+            It's my first website with Flask and sure that not the last. If you would like to know, what else I've learned during Pandemic time - check out 
+            <a href="{{url_for('work')}}" class="text-white">"Work"</a> page.
+          </p>
+          <p>
+            Front-end is not my strong suit, but I tend to make it one of my strong suits in the future after I get better at it and practice more. My goal is to become a great software engineer and I will make sure I achieve that goal. I appreciate all the suggestions and opinions I get as it helps me get better.
+          </p>
+      </div>
+    </div>
+</div>
+</article>
+
+
+{%endblock%} 

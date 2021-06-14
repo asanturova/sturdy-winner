@@ -1,0 +1,46 @@
+{%extends "layout.html"%}
+{%block content%}
+
+<!--Page Header-->
+<header> <!--class="masthead" style="background-image: url('../static/image/')"-->
+  <div class="overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Things I do</h1>
+            <br>
+            <span class="subheading">It's just a beginning!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<br>
+
+<!--Main Content-->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      <img src="{{url_for ('static', filename='image/accounting.jpg')}}">
+        Bank Account
+      <p>I hope i'll develop it in this week</p>
+      <p>I will use a banking system and a bit if maths</p>
+      <br>
+    
+      <img src="{{url_for ('static', filename='image/seo.jpg')}}">Window-dekstop App
+      <p>Here is gonna be my work with SQL</p>
+      <p>I think, nowadays we have a amount of data, so we have to deep onto it. And I find fascinating to work with numbers, list of numbers< to organise them. Like hard but I will like it.</p>
+      <br>
+          <!-- <div class="col align-self-start"> -->
+    
+      <img src="{{url_for ('static', filename='image/coding.jpg')}}">Mobile App
+      <p>This on is coming as well</p>
+    </div>
+  </div>
+</div>
+            
+
+{%endblock%} 
